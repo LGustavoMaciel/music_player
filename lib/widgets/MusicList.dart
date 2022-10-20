@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, file_names
+
 import 'package:flutter/material.dart';
 
 class MusicList extends StatelessWidget {
@@ -9,7 +11,7 @@ class MusicList extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 10),
-          for (int i = 1; i <= 3; i++)
+          for (int i = 1; i <= 10; i++)
             Container(
               margin: EdgeInsets.only(top: 15, right: 12, left: 5),
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
@@ -21,7 +23,7 @@ class MusicList extends StatelessWidget {
                 children: [
                   Text(
                     i.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -35,7 +37,7 @@ class MusicList extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Imagine Dragons - Believer",
                           style: TextStyle(
                             color: Colors.white,

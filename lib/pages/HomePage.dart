@@ -1,5 +1,9 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:music_player/widgets/MusicList.dart';
+
+import '../widgets/Playlists.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -144,7 +148,7 @@ class HomePage extends StatelessWidget {
                     child: TabBarView(
                       children: [
                         MusicList(),
-                        Container(color: Colors.red),
+                        Playlists(),
                         Container(color: Colors.red),
                         Container(color: Colors.red),
                         Container(color: Colors.red),
