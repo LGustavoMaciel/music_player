@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 
 class Playlists extends StatelessWidget {
@@ -10,7 +9,7 @@ class Playlists extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          for (int i = 1; i < 10; i++)
+          for (int i = 1; i < 5; i++)
             Container(
               margin: EdgeInsets.only(top: 20, right: 20, left: 5),
               padding: EdgeInsets.all(15),

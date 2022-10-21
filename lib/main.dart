@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/pages/HomePage.dart';
+import 'package:music_player/pages/MusicPage.dart';
 import 'package:music_player/pages/PlaylistPage.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const HomePage(),
         "playlistPage": (context) => const PlaylistPage(),
+        "musicPage": (context) => const MusicPage(),
       },
     );
   }

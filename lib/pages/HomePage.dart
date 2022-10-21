@@ -149,10 +149,10 @@ class HomePage extends StatelessWidget {
                       children: [
                         MusicList(),
                         Playlists(),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
+                        MusicList(),
+                        Playlists(),
+                        MusicList(),
+                        Playlists(),
                       ],
                     ),
                   )
