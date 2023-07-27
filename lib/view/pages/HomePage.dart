@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:music_player/widgets/MusicList.dart';
+import 'package:music_player/view/widgets/MusicList.dart';
 
 import '../widgets/Playlists.dart';
 
@@ -14,13 +14,10 @@ class HomePage extends StatelessWidget {
       length: 6,
       child: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-              Color(0xFF303151).withOpacity(0.6),
-              Color(0xFF303151).withOpacity(0.9),
-            ])),
+            gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [
+          Color(0xFF303151).withOpacity(0.6),
+          Color(0xFF303151).withOpacity(0.9),
+        ])),
         child: Scaffold(
           backgroundColor: Colors.transparent,
           body: SafeArea(
@@ -81,9 +78,7 @@ class HomePage extends StatelessWidget {
                     child: Container(
                       height: 50,
                       width: 380,
-                      decoration: BoxDecoration(
-                          color: Color(0xFF31314F),
-                          borderRadius: BorderRadius.circular(8)),
+                      decoration: BoxDecoration(color: Color(0xFF31314F), borderRadius: BorderRadius.circular(8)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
