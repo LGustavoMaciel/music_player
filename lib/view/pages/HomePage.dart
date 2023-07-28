@@ -39,14 +39,25 @@ class HomePage extends StatelessWidget {
                             size: 30,
                           ),
                         ),
-                        InkWell(
-                          onTap: () {},
-                          child: Icon(
+                        PopupMenuButton(
+                          icon: Icon(
                             Icons.more_vert,
                             color: Color(0xFF899CCF),
-                            size: 30,
                           ),
-                        )
+                          itemBuilder: (_) => [
+                            PopupMenuItem(
+                              child: TextButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(
+                                    context,
+                                    '/',
+                                  );
+                                },
+                                child: Text('Logout'),
+                              ),
+                            )
+                          ],
+                        ),
                       ],
                     ),
                   ),

@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
             Center(
               child: Container(
                 width: 350,
-                height: 400,
+                height: 300,
                 child: Card(
                   color: Color(0xFF303151).withOpacity(0.7),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 hintText: 'Email',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Color(0xFF899CCF)),
                               ),
                             ),
                           ),
@@ -83,7 +83,7 @@ class LoginPage extends StatelessWidget {
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 hintText: 'Senha',
-                                hintStyle: TextStyle(color: Colors.white),
+                                hintStyle: TextStyle(color: Color(0xFF899CCF)),
                               ),
                             ),
                           ),
@@ -100,8 +100,13 @@ class LoginPage extends StatelessWidget {
                               Color(0xFF303151),
                             ),
                           ),
-                          icon: Icon(Icons.check),
-                          label: Text('LOGIN'),
+                          icon: Icon(
+                            Icons.check,
+                            color: Color(0xFF899CCF),
+                          ),
+                          label: Text(
+                            'LOGIN',
+                          ),
                         ),
                       ],
                     ),
